@@ -27,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/confluentforms/google-sheet-to-json/issues"
   },
-  "homepage": "https://github.com/confluentforms/google-sheet-to-json#readme"
+  "homepage": "https://github.com/confluentforms/google-sheet-to-json#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "jquery": "2.2.1",
+    "mocha": "2.4.5",
+    "mocha-phantomjs": "4.0.2",
+    "sinon-dist": "1.15.4"
+  }
 }

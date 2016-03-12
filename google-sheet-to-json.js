@@ -1,3 +1,4 @@
+// xx -- review best practices for jquery plugins
 ( function ( $, window, document, undefined ) {
 
 	// take a row in googl-ese json and return it as name:value pairs
@@ -6,6 +7,8 @@
 		var returner = {};
 
 		var properties = Object.getOwnPropertyNames(cell);
+    // sorting is important for catching numbered properties below
+    // name sure the un-numbered name is first
 		properties.sort();
 
 		properties.forEach(function(key){
@@ -20,13 +23,14 @@
 				var name = key.substr(4);
 
 				// the only tricky thing is to turn the property value into an array
-				// if the property name has variations that end in a number and
-				// more than one are used.
+				// if the property name has variations that end in a number
 				// Address, Address1, Address2... etc.
 				var num = name.charAt(name.length - 1);
 				if(/^\d+$/.test(num)){ // indexed propery
 					name = name.substr(0, name.length - 1);
 					var arr = returner[name];
+          // if arr is not an array, but exists its the unnumbered value: ex. Address
+          // replace its position with an array and push it in first
 					if(!Array.isArray(arr)){
 						returner[name] = [];
 						if(arr) returner[name].push(arr);
@@ -46,7 +50,6 @@
 			id,
 			(worksheet || 'od6'),
 			'public/values?alt=json&callback=?'].join('/');
-		console.log(url);
 
 		$.getJSON(url)
 			.done(function(data){
