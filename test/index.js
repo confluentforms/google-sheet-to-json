@@ -8,7 +8,7 @@ var expect = chai.expect;
 
 var SHEET_ID = '1nmrLOKhY_XB9vYgr-8xYTQ7dAB7AykY9G-UolHvcit0';
 
-describe('$.fn.googleSheetToJSON', function(){
+describe('$.googleSheetToJSON', function(){
 
 	// xx  - stub based on input
   beforeEach(function(){
