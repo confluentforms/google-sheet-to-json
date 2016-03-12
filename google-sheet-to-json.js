@@ -36,7 +36,7 @@
 						if(arr) returner[name].push(arr);
 					}
 					returner[name].push(val);
-				} else returner[name] = val;
+				} else returner[name] = val; // the basic case for a name/value pair
 			}
 		});
 		return returner;
@@ -48,12 +48,14 @@
 		var url = [
 			'https://spreadsheets.google.com/feeds/list',
 			id,
-			(worksheet || 'od6'),
+			(worksheet || 'od6'), // od6 is the default id of the first worksheet
 			'public/values?alt=json&callback=?'].join('/');
 
 		$.getJSON(url)
 			.done(function(data){
 				// try to fail w/ info if we cant get any data from the sheets
+				// very errorable these sheets, using a spacer row for instance
+				// under the headers and boom! no data. meh.
 				if(!data.feed) throw new Error('Unable to retrieve google spreadsheet JSON data for ' + url);
 				if(!data.feed.entry) throw new Error('Google spreadsheet seems empty for ' + url);
 				deferred.resolve(data.feed.entry.map(rowToObject));
