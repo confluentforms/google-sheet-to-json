@@ -1,5 +1,6 @@
 // xx -- review best practices for jquery plugins
 ( function ( $, window, document, undefined ) {
+	'use strict';
 
 	// take a row in googl-ese json and return it as name:value pairs
 	function rowToObject(cell){
