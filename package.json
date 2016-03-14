@@ -1,8 +1,8 @@
 {
-  "name": "google-sheet-to-json",
+  "name": "jquery-google-sheet-to-json",
   "version": "0.0.0",
   "description": "JQuery plugin to aquire JSON data from a Google Docs spreadsheet in name/value format.",
-  "main": "google-sheet-to-json.js",
+  "main": "jquery-google-sheet-to-json.js",
   "directories": {
     "example": "examples",
     "test": "test"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/confluentforms/google-sheet-to-json.git"
+    "url": "git+https://github.com/confluentforms/jquery-google-sheet-to-json.git"
   },
   "keywords": [
     "jquery-plugin",
@@ -25,9 +25,9 @@
   "author": "Thomas Leen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/confluentforms/google-sheet-to-json/issues"
+    "url": "https://github.com/confluentforms/jquery-google-sheet-to-json/issues"
   },
-  "homepage": "https://github.com/confluentforms/google-sheet-to-json#readme",
+  "homepage": "https://github.com/confluentforms/jquery-google-sheet-to-json#readme",
   "devDependencies": {
     "chai": "3.5.0",
     "jquery": "2.2.1",
