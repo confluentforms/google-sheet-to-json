@@ -1,6 +1,6 @@
 {
   "name": "jquery-google-sheet-to-json",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JQuery plugin to aquire JSON data from a Google Docs spreadsheet in name/value format.",
   "main": "jquery-google-sheet-to-json.js",
   "directories": {
