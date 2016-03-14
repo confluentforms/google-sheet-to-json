@@ -32,7 +32,7 @@ $(document).ready(function(){
 </script>
 ```
 
-Your spreadsheet *must be public* **and** *published*, see the [Google documentation on it](https://ctrlq.org/code/20004-google-spreadsheets-json).
+Your spreadsheet *must be public* **and** *published*, see the [Google documentation on it](https://ctrlq.org/code/20004-google-spreadsheets-json). You can find the spreadsheet id (and worksheet id if needed) in the url)[http://damolab.blogspot.com/2011/03/od6-and-finding-other-worksheet-ids.html].The spreadsheet id is the first arg to the function, the worksheet id is the optional second arg, it will default to the first worksheet.
 
 The rows will be an array of objects with each property name being the value used as the first header row of the spreadsheet. See the [basic example spreadsheet](https://docs.google.com/spreadsheets/d/1nmrLOKhY_XB9vYgr-8xYTQ7dAB7AykY9G-UolHvcit0/edit), things like "first name" will be changed (by Google) to be acceptable JavaScript property names: "firstname".
 
