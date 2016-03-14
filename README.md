@@ -39,7 +39,7 @@ The rows will be an array of objects with each property name being the value use
 Data may be present (or not) based on content:
 
 * An empty cell will not be in the result
-* A cell that has the header pattern name, name*Number**, ..., name*Number* will become an array with all the values
+* A cell that has the header pattern name, name*Number*, ..., name*Number* will become an array with all the values
 * Otherwise it will be a string
 
 ## Warning
