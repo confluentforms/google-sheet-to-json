@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/confluentforms/jquery-google-sheet-to-json.png?branch=master)](https://travis-ci.org/confluentforms/jquery-google-sheet-to-json)
 
-Take a Google docs spreadsheet url and retrieve the data in JSON format.
+Take a Google docs spreadsheet url and retrieve the data as a ready-to-use JavaScript Object, as if it was read in from the JSON format. 
 
 See the [basic example](examples/basic/) for use.
 
@@ -45,3 +45,5 @@ Data may be present (or not) based on content:
 ## Warning
 
 Google Spreadsheets have problems if the formatting of the spreadsheet is off even a little bit. No empty rows!
+
+It doesn't actually convert it to a JSON string, but an Object as if it were JSON, title is misleading I know :dizzy_face:.
